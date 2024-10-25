@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Lifestyle Vibes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-secondary" onclick="location.href='subscribe.html'"
+                            style="margin-left: 10px;">Subscribe</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Subscription Plans</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Weekly Pass</h5>
+                        <p class="card-text">Get access for one week. Perfect for trying out our content!</p>
+                        <h3 class="text-success">$5</h3>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Monthly Pass</h5>
+                        <p class="card-text">Get access for a whole month of our exclusive content.</p>
+                        <h3 class="text-success">$10</h3>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Lifetime Pass <span class="badge bg-success">Best Value</span></h5>
+                        <p class="card-text">One-time payment for lifetime access to all and our future content!</p>
+                        <h3 class="text-success">$80</h3>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<h2 class="text-center mt-5 mb-4">Subscription Benefits</h2>
+<div class="table-container mx-auto" style="max-width: 1200px;">
+    <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Features</th>
+                <th scope="col">Non-Subscriber</th>
+                <th scope="col">Subscriber</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Access to Daily Content</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Weekly Consultation With Our Team</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Access to Community Events</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Access to Premium Content</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Weekly Updates About Future Contents</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Exclusive One to One Consultation With Our Team Anytime</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Monthly Newsletters</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="subscribeModalLabel">Subscription Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="debitCard" class="form-label">Debit Card Number</label>
+                        <input type="text" class="form-control" id="debitCard" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="expirationDate" class="form-label">Expiration Date</label>
+                            <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cvc" class="form-label">CVC</label>
+                            <input type="text" class="form-control" id="cvc" required>
+                        </div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="noRefundCheck" required>
+                        <label class="form-check-label" for="noRefundCheck">
+                            I understand that this purchase is non-refundable
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Confirm Subscription</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="flex-grow-1"></div>
+
+    <footer class="footer py-4 bg-dark text-white text-center">
+        <h2 class="text-center">© 2024 Lifestyle Vibes. All Rights Reserved.</h2>
+        <div class="container text-center mb-2">
+            <a href="https://www.instagram.com/mvw.14/" class="icons"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icons"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="text-center watermark">Made by Miguel Valentino Willam</p>
+        <small><a href="#">Privacy Policy</a> •
+            <a href="#">Terms & Conditions</a></small>
+    </footer>
+
+</body>
+
+</html>

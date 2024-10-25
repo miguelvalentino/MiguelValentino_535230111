@@ -1,0 +1,88 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #31b0d5; 
+    border-radius: 5px;
+}
+
+.carousel-inner img {
+    max-height: 500px; 
+    object-fit: cover; 
+}
+
+.carousel {
+    margin-bottom: 50px; 
+}
+
+.card-text{
+    color: black;
+}
+
+.card-row {
+    justify-content: center; 
+}
+
+.container{
+    margin-bottom: 30px;
+}
+
+.navbar-nav{
+    margin-left: 1060px;
+}
+
+.card{
+    margin-left: 1;
+}
+
+.card-title{
+    color: black;
+}
+
+.team-img {
+    height: 300px;
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.icons {
+    color: white; /* Instagram color */
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    margin-top: auto;
+}
+
+.table{
+    margin-right: 1000px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px; /* Sesuaikan agar semua gambar memiliki tinggi seragam */
+  }
+
+.carousel-caption{
+    color: black;
+}
+
+.modal-body{
+    color: black;
+}
+
+.modal-title{
+    color: black;
+}
